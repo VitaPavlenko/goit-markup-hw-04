@@ -50,7 +50,6 @@ ul {
 
 .nav-adress-link {
   display: inline-block;
-  width: 161px;
 
   margin-right: 50px;
 }
@@ -59,6 +58,9 @@ ul {
   margin: 0;
 }
 
+.adress-second {
+  width: 142px;
+}
 .nav {
   display: flex;
   justify-content: space-around;
@@ -160,16 +162,25 @@ ul {
   cursor: pointer;
 }
 
-.icon-phone::before {
-  width: 10px;
-  height: 16px;
-  content: '';
+.icon-phone {
+  margin-right: 10px;
   background-position: center;
   background-size: cover;
 }
 
-.icon:hover {
+.nav-adress-link:hover {
   fill: var(--accent-color);
+}
+
+.icon-one {
+  width: 16px;
+  height: 12px;
+}
+
+.icon-two {
+  width: 10px;
+  height: 16px;
+  background-size: cover;
 }
 
 .site-naw .connect {
@@ -360,45 +371,54 @@ ul {
 }
 
 .command-item {
-  display: inline-block;
+  display: inline-flex;
   padding: 0;
   border: none;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--accent-whiter-color);
+  /* border: 1px solid yellow;
+  background-color: var(--accent-whiter-color); */
 }
-
 .command-item:last-child {
   margin-right: 0px;
 }
 
-.command-icon {
+.command-list-icon {
   display: inline-flex;
-
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: #afb1b8;
-  background-size: contain;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--primary-bg-color);
+
+  border-radius: 50%;
+  background-position: center;
 }
 
-.command-icon:hover {
+.command-list-icon :hover {
   background-color: var(--accent-color);
+
+  border-radius: 50%;
   fill: var(--primary-bg-color);
+}
+
+.command-icon {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  background-position: center;
 }
 
 /* Постоянные клиенты */
 
 .crappy-clients {
-  display: flex;
+  display: inline-block;
   width: 100%;
 }
 
 .icon-clients {
-  display: inline-block;
+  display: flex;
   margin-right: 30px;
   background-color: var(--primary-bg-color);
   width: 170px;
@@ -538,11 +558,11 @@ ul {
 }
 
 .sn-item {
-  display: inline-block;
+  display: inline-flex;
   width: 44px;
   height: 44px;
-
-  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 .sn-item:last-child {
@@ -550,22 +570,22 @@ ul {
 }
 
 .sn-icon {
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
   background-position: center;
-
   fill: var(--primary-bg-color);
 }
 
-.sn-icon:hover {
+.sn-item:hover {
   background-color: var(--accent-color);
 }
 
+.center {
+  display: block;
+  align-items: center;
+}
 .ft-block {
   display: flex;
 }
