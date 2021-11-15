@@ -46,12 +46,14 @@ ul {
 
 .nav-adress {
   display: flex;
+  color: var(--title-text-color);
 }
 
 .nav-adress-link {
   display: inline-block;
-
+  color: var(--title-text-color);
   margin-right: 50px;
+  fill: var(--title-text-color);
 }
 
 .nav-adress-link:last-child {
@@ -167,26 +169,34 @@ ul {
   background-size: cover;
 }
 
-.nav-adress-link:hover {
+.nav-adress-link:hover,
+.nav-adress-link:focus {
   fill: var(--accent-color);
 }
 
 .icon-one {
+  fill: currentColor;
   width: 16px;
   height: 12px;
 }
 
 .icon-two {
+  fill: currentColor;
   width: 10px;
   height: 16px;
   background-size: cover;
 }
 
-.site-naw .connect {
+.connect {
   color: var(--title-text-color);
 }
 
-.current {
+.connect:hover,
+.connect:focus {
+  color: var(--accent-color);
+}
+
+.connect .current {
   color: var(--accent-color);
 }
 
@@ -263,31 +273,32 @@ ul {
   display: flex;
 }
 
-.advantage {
+.advantage-block {
   width: 25%;
   margin-left: 30px;
 }
 
-.advantage:first-child {
+.advantage-block:first-child {
   margin-left: 0;
 }
 
-.advantage: {
-  display: inline-block;
+.advantage {
+  margin-bottom: 30px;
+  display: flex;
   width: 270px;
   height: 120px;
   background-color: var(--secondary-bg-color);
   align-items: center;
+  justify-content: center;
 }
 
 .advantage-icon {
-  width: 270px;
-  height: 120px;
-  background-color: var(--secondary-bg-color);
+  width: 70px;
+  height: 70px;
   align-items: center;
 }
 
-/.title {
+.title {
   margin-bottom: 10px;
   padding-top: 30px;
   font-size: 14px;
@@ -403,15 +414,20 @@ ul {
   width: 100%;
 }
 
-.icon-clients {
+.crappy-list {
   display: flex;
   margin-right: 30px;
   background-color: var(--primary-bg-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-clients {
   fill: #afb1b8;
-  border-radius: 4px;
 }
 
 .not-margin {
@@ -422,12 +438,16 @@ ul {
   box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
 }
 
-.icon-clients:hover,
-.icon-clients:focus {
+.crappy-list:hover,
+.crappy-list:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
 
+.crappy-list:hover .icon-clients,
+.crappy-list:focus .icon-clients {
+  fill: var(--accent-color);
+}
 .shadow:hover,
 .shadow:focus {
   box-shadow: 0px 4px rgba(54, 58, 248, 0.253);
