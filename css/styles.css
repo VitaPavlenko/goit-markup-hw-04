@@ -402,7 +402,8 @@ ul {
   background-position: center;
 }
 
-.command-item:hover {
+.command-item:hover,
+.command-item:focus {
   background-color: var(--accent-color);
   fill: var(--primary-bg-color);
 }
@@ -586,7 +587,8 @@ ul {
   fill: var(--primary-bg-color);
 }
 
-.sn-item:hover {
+.sn-item:hover,
+.sn-item:focus {
   background-color: var(--accent-color);
 }
 
@@ -612,3 +614,25 @@ ul {
   display: block;
   margin-right: 70px;
 }
+
+/* .backdrop {
+  width: 100vw;
+  height: 100vw;
+  background-color: chartreuse;
+  position: fixed;
+  top: 0;
+}
+.mobal {
+  position: absolute;
+  width: ;
+  min-height: ;
+  border-radius: ;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close-btn {
+  position: absolute;
+  background-image: ;
+} */
