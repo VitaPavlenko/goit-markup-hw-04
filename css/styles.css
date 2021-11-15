@@ -157,7 +157,6 @@ ul {
 .site-naw {
   display: inline-flex;
   align-items: center;
-  /* background-color: green; */
   text-decoration: none;
   cursor: pointer;
 }
@@ -363,57 +362,44 @@ ul {
   padding-bottom: 30px;
   text-align: center;
 }
-
 .command-list {
-  display: inline-block;
-  width: 206px;
-  height: 44px;
+  display: flex;
+  padding-right: 32px;
+  padding-left: 32px;
+  justify-content: space-between;
 }
 
 .command-item {
   display: inline-flex;
-  padding: 0;
-  border: none;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /* border: 1px solid yellow;
-  background-color: var(--accent-whiter-color); */
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
 }
+
 .command-item:last-child {
   margin-right: 0px;
-}
-
-.command-list-icon {
-  display: inline-flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--primary-bg-color);
-
-  border-radius: 50%;
-  background-position: center;
-}
-
-.command-list-icon :hover {
-  background-color: var(--accent-color);
-
-  border-radius: 50%;
-  fill: var(--primary-bg-color);
 }
 
 .command-icon {
   display: inline-flex;
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  background-size: contain;
   background-position: center;
+}
+
+.command-item:hover {
+  background-color: var(--accent-color);
+  fill: var(--primary-bg-color);
 }
 
 /* Постоянные клиенты */
 
 .crappy-clients {
-  display: inline-block;
+  display: flex;
   width: 100%;
 }
 
@@ -563,6 +549,8 @@ ul {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .sn-item:last-child {
